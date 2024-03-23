@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Be Continued</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="copper-gradient">
+    <div class="container">
+        <div class="animation-container">
+            <h2 class="to-be-continued">To Be Continued...</h2>
+        </div>
+    </div>
+
+    <audio id="backgroundMusic" src="assets/TIMI DAKOLO FEAT OLAMIDE  - TAKE(MP3_160K).mp3" loop></audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            
+            // Check if music was playing before
+            if (sessionStorage.getItem('musicPlaying') === 'true') {
+                backgroundMusic.play();
+            }
+        });
+    </script>
+</body>
+</html>

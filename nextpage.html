@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: linear-gradient(45deg, #b87333, #ffd700); /* Copper gradient */
+            color: #fff; /* Set text color to white */
+            font-family: 'Pacifico', cursive; /* Use Pacifico font */
+            text-align: center;
+            padding-top: 100px; /* Adjust spacing as needed */
+            font-size: 36px; /* Adjust font size as needed */
+        }
+
+        /* Animation for bouncing text */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+        .bounce-text {
+            animation: bounce 1.5s infinite; /* Apply bouncing animation */
+            display: inline-block; /* Display text inline */
+        }
+
+        /* Icon styles */
+        .icon {
+            display: block; /* Display icon as block element */
+            margin-top: 20px; /* Add space between text and icon */
+            font-size: 24px; /* Adjust icon size */
+        }
+    </style>
+</head>
+<body>
+    <p class="bounce-text">How It Is Going</p>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <a href="next_slides_page.html">
+        <img src="assets/right-arrow-solid-square-button.png" alt="Your Icon" class="icon" width="300" height="300">
+    </a>
+    </div>
+    
+
+
+
+    <!-- Add any additional content for the transition page here -->
+</body>
+</html>
